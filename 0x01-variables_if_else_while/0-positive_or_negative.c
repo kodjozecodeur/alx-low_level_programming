@@ -3,28 +3,29 @@
 #include <stdio.h>
 
 /**
- * main - assigns a random number to int n everytime
- * it executes, and prints it
- * Return: Always 0 (Success)
+ * main - printf if number is positive or not
+ *
+ * Descriotion: using the main function
+ * Return: 0
  */
 int main(void)
 {
-	int n;
+int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-    /*the code is here*/
-	if (n > 0) 
-    {
-        printf("%d is positive\n", n);
-    }
-    else if (n == 0)
-    {
-        printf("%d is zero\n", n);
-    }
-	else if (n < 0)
-    {
-        printf("%d is negative\n", n);
-    }
-	return (0);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+ /*the code goes here*/
+if (n > 0)
+{
+	printf("%d is positive\n", n);
+}
+else if (n== 0)
+{
+	 printf("%d is zero\n", n);
+}
+else if (n < 0)
+{
+	printf("%d is negative\n", n);
+}
+return (0);
 }
